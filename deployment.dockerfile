@@ -1,4 +1,4 @@
 FROM nginx:alpine
-COPY . /usr/shar/nginx/index.html
+COPY . /usr/shar/nginx/html/index.html
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off:"]
+CMD ["nginx", "-g", "daemon off;"]
